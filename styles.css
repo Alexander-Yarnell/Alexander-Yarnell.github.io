@@ -1,0 +1,37 @@
+
+.container{
+  display: grid;
+  padding-left: 0px;
+  float: left;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "header";
+}
+
+.grid-item-1{
+  grid-area: header;
+}
+
+.name{
+  color: black;
+  width: 100%;
+  font-size: 80px;
+  font-style: normal;
+  font-variant: initial;
+  text-shadow: 1px 2px 10px;
+  align-content: space-around;
+}
+
+.profile{
+  background-image: url('images/Profile\ Pic.JPG');
+  border-radius: 15%;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position:inherit ;
+  height: 300px;
+  width: 300px;
+  color: black;
+  box-shadow: .5em .5em 15px;
+}
+.video{
+  width: 100%;
+}
