@@ -16,31 +16,48 @@ body, html {
   background-size: cover;
 }
 .container{
-  padding: 3em;
-  display: grid;
-  grid-gap: 2em;
+  display:grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "img bio"
+  "video contact"
+  "footer footer";
+  grid-gap: .2rem;
 }
-
 .profile{
-  background-image: url('images/Profile\ Pic.JPG');
-  border-radius: 15%;
-  background-size: 300px;
-  background-repeat: no-repeat;
-  background-position:inherit ;
-  height: 300px;
-  width: 300px;
-  color: black;
-  box-shadow: .5em .5em 15px;
-  grid-column-start:auto;
+  background-color: aquamarine;
+  grid-area: img;
 }
-
 .bio{
-  grid-column-start: 3;
-  grid-row-start: 1;
+  background-color: cadetblue;
+  grid-area: bio;
+}
+.video{
+  background-color: royalblue;
+  grid-area: video;
+}
+.contact{
+  background-color: steelblue;
+  grid-area: contact;
+}
+.footer{
+  background-color: slategray;
+  width: 100%;
+  grid-area: footer;
 }
 
-.video{
-  width: 100%;
-  grid-row-start: 2;
-  grid-column-start: 1;
+@media only screen and (max-width: 980px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr 2fr 1fr;
+    grid-template-areas: 
+    'img'
+    'bio'
+    'video'
+    'contact'
+    'footer';
+  }
 }
