@@ -16,6 +16,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .container{
   display:grid;
   height: 100vh;
