@@ -1,7 +1,7 @@
 
 body, html {
   height: 100%;
-  
+  background-image: url('images/background.jpg');
 }
 
 .bg {
@@ -27,6 +27,8 @@ body, html {
   "img bio"
   "video contact"
   "footer footer";
+  font-family: "Inter", sans-serif;
+  color: white;
   grid-gap: .2rem;
 }
 .frame{ 
@@ -34,7 +36,6 @@ body, html {
   grid-area: img;
 }
 .profile{
-  left: 9000px;
   background-image: url('images/Profile Pic.JPG');
   border-radius: 15%;
   background-size: 300px;
@@ -46,19 +47,15 @@ body, html {
   box-shadow: .5em .5em 15px;
 }
 .bio{
-  background-color: cadetblue;
   grid-area: bio;
 }
 .video{
-  background-color: royalblue;
   grid-area: video;
 }
 .contact{
-  background-color: steelblue;
   grid-area: contact;
 }
 .footer{
-  background-color: slategray;
   width: 100%;
   grid-area: footer;
 }
